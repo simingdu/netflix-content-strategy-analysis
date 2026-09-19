@@ -23,7 +23,7 @@ I used exploratory data analysis to understand the structure of Netflix's catalo
 
 ## Project Context
 
-This analysis originated from a five-person course project on Netflix content strategy.
+This repository contains my EDA contribution from a five-person course project on Netflix content strategy, reorganized here as a standalone portfolio project.
 
 My contribution focused on:
 
