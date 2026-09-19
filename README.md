@@ -59,3 +59,96 @@ After splitting multi-label genre entries into individual genre appearances, the
 Because a single title can belong to multiple genres, these values represent **genre appearances rather than unique title counts**.
 
 ![Top 10 Genres](images/top_10_genres.png)
+
+## Methodology
+
+The analysis followed a straightforward exploratory data analysis workflow:
+
+1. **Inspect the dataset**
+   - Reviewed dataset dimensions, column types, and missing values.
+
+2. **Prepare the data**
+   - Removed duplicate records.
+   - Converted `date_added` to datetime format.
+   - Created a `year_added` variable for time-based analysis.
+   - Replaced missing values in selected categorical fields with `Unknown`.
+
+3. **Transform genre data**
+   - Split the multi-label `listed_in` field into individual genres.
+   - Exploded the genre lists into separate rows for genre-level analysis.
+
+4. **Analyze catalog composition**
+   - Compared Movies and TV Shows.
+   - Examined the number of titles added by year.
+   - Identified the most frequently appearing genre categories.
+
+5. **Visualize and interpret findings**
+   - Used Matplotlib to create charts highlighting the main catalog patterns.
+
+## Repository Structure
+
+```text
+netflix-content-strategy-analysis/
+├── data/
+│   └── README.md
+├── images/
+│   ├── movie_vs_tv_show.png
+│   ├── titles_added_by_year.png
+│   └── top_10_genres.png
+├── notebooks/
+│   └── netflix_analysis.ipynb
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+
+- `data/` contains dataset documentation and reproduction instructions.
+- `images/` contains visualizations used in this README.
+- `notebooks/` contains the exploratory analysis notebook.
+
+## How to Run
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/simingdu/netflix-content-strategy-analysis.git
+cd netflix-content-strategy-analysis
+```
+
+2. Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Download the Netflix Movies and TV Shows dataset from the Kaggle source documented in `data/README.md`.
+
+4. Save the dataset as:
+
+```text
+data/netflix_titles.csv
+```
+
+5. Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+6. Open:
+
+```text
+notebooks/netflix_analysis.ipynb
+```
+
+## Limitations
+
+This analysis focuses on Netflix catalog metadata rather than user behavior or financial performance.
+
+Key limitations include:
+
+- The dataset only covers catalog additions through **2021**.
+- It does not contain viewership, subscriber, revenue, or engagement data.
+- Some fields contain missing values.
+- Genre labels are multi-label, so genre frequencies represent appearances rather than unique titles.
+- The analysis is primarily descriptive and does not establish causal relationships between observed catalog patterns and Netflix's business strategy.
