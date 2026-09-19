@@ -12,7 +12,7 @@ The analysis focuses on three questions:
 - How did the number of titles added to Netflix change over time?
 - Which genre categories appear most frequently in the catalog?
 
-The project uses exploratory data analysis to establish a baseline understanding of Netflix's content library and support broader analysis of content strategy and genre trends.
+I used exploratory data analysis to understand the structure of Netflix's catalog before the team moved into deeper genre and content-strategy analysis.
 
 ## Tech Stack
 
@@ -38,13 +38,13 @@ My contribution focused on:
 
 ### 1. Movies make up the majority of the catalog
 
-The dataset contains **6,131 Movies** and **2,676 TV Shows**, showing that Netflix's catalog during this period was substantially more movie-heavy.
+The dataset contains **6,131 Movies** and **2,676 TV Shows**, so Movies make up about 70% of the titles in the dataset.
 
 ![Movies vs. TV Shows](images/movie_vs_tv_show.png)
 
 ### 2. Catalog expansion accelerated after 2015
 
-The number of titles added to Netflix increased sharply during the second half of the 2010s, with the highest observed number of additions occurring in **2019**.
+Title additions increased sharply after 2015 and peaked in **2019**, when 2,016 titles were added.
 
 ![Titles Added by Year](images/titles_added_by_year.png)
 
@@ -62,7 +62,7 @@ Because a single title can belong to multiple genres, these values represent **g
 
 ## Methodology
 
-The analysis followed a straightforward exploratory data analysis workflow:
+My analysis included the following steps:
 
 1. **Inspect the dataset**
    - Reviewed dataset dimensions, column types, and missing values.
