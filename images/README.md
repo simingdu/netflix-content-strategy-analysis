@@ -1,9 +1,9 @@
 # Images
 
-This folder contains selected visualizations used in the project README.
+This folder contains the visualizations used in the project README.
 
-Planned visualizations include:
+Included figures:
 
-- Netflix catalog growth over time
-- Top genre distribution
-- Movie vs. TV Show comparison
+- `movie_vs_tv_show.png` — Netflix catalog distribution between Movies and TV Shows
+- `titles_added_by_year.png` — Number of titles added to Netflix by year
+- `top_10_genres.png` — Most frequent genre categories in the catalog
